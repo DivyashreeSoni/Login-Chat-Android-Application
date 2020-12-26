@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/i1"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:imeActionId="4"
+        android:imeOptions="actionSend"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="Enter Your Message"
+        android:textColorHint="#09f5e0"
+        android:inputType="text"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="match_parent"
+        android:background="@drawable/i1"
+        android:layout_above="@+id/userInput" />
+
+
+</RelativeLayout>
